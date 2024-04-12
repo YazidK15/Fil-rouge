@@ -5,3 +5,30 @@
     font-family: "Poppins";
     color: #2A3342;
 }
+
+ /* Footer */
+ footer {
+    background-color: #DAEFF1;
+ }
+ .footer-main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+ }
+ .footer-main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+ .footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+ }
+ footer .footer-title {
+    font-weight: 700;
+ }
+ footer .footer-subtitle {
+    font-size: 14px;
+ }
