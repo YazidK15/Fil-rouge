@@ -23,17 +23,19 @@ a {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* background-color: red; */
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 .logo_header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+}
+
+.logo_header h1 {
+    font-weight: normal;
 }
 
 .links_header ul {
@@ -49,8 +51,58 @@ header {
     display: flex;
 }
 
-.anchor_links {
+a.anchor_link {
     font-weight: bold;
     text-decoration: underline;
     color: #56B280;
+}
+
+/* Jumbotron */
+
+#jumbotron {
+    background-image: url(./assets/images/jumbotron.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jumbotron_box {
+    background-color: #eee9e8f1;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+#jumbotron_text h2{
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+#jumbotron_text p {
+    font-size: 14px;
+    display: inline-block;
+    width: 500px;
+}
+
+#jumbotron_button button {
+    background-color: #56B280;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 35%;
+    margin-bottom: 30px;
+    border: #56B280;
+}
+
+#jumbotron_button button:hover {
+    cursor: pointer;
 }
