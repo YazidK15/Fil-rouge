@@ -56,7 +56,7 @@ form{
     margin-top: 5px;
     color: #56B280;
 }
-button{
+#creer_compte_button{
     margin-top: 10px;
     background-color: #56B280;
     color: white;
@@ -64,7 +64,7 @@ button{
     border-style: none;
     border-radius: 10px;
 }
-button:hover{
+#creer_compte_button:hover{
     cursor: pointer;
     background-color: #468b65;
 }
@@ -72,10 +72,13 @@ button:hover{
     display: flex;
     margin-top: 20px;
 }
-a{
+#login_lien{
     text-decoration: none;
     color: #2AA2FE;
     margin-left: 10px;
+}
+#deja_client{
+    font-weight: 600;
 }
 @media screen and (max-width: 600px) {
     .contener_img{
@@ -98,7 +101,6 @@ a{
     label{
         font-size: 15px;
     }
-
     .prenom{
     margin-top: 10px;
     }
@@ -116,7 +118,7 @@ a{
         color: #56B280;
         font-size: 15px;
     }
-    button{
+    #creer_compte_button{
     margin-top: 10px;
     background-color: #56B280;
     color: white;
