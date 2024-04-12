@@ -115,3 +115,85 @@ header {
 #jumbotron_button button:hover {
     cursor: pointer;
 }
+
+ /* Footer */
+ footer {
+    background-color: #DAEFF1;
+ }
+ .footer-main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 0;
+ }
+ .footer-main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+ .footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+ }
+ footer .footer-title {
+    font-weight: 700;
+ }
+ footer .footer-subtitle {
+    font-size: 14px;
+ }
+ .footer-icon {
+    width: 40px;
+ }
+ footer img {
+    height: auto;
+ }
+ .footer-main-item a {
+   padding-right: 8px;
+ }
+ .footer-main-item a .footer-icon {
+   width: 30px;
+ }
+ .vertical-divider {
+   width: 1px;
+   background-color: #96A3B5;
+ }
+ .footer-legal {
+   background-color: white;
+ }
+ .footer-legal ul {
+   max-width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   list-style: none;
+   font-size: 14px;
+   padding: 24px 0;
+ }
+ .footer-legal ul li a {
+   text-decoration: none;
+ }
+
+ /* RESPONSIVE BREAKPOINTS */ 
+/* Tablettes et moyennes écrans */
+@media screen and (max-width: 992px){
+   .footer-main, .footer-legal ul {
+      max-width: 94%;   }
+   .vertical-divider {
+      display: none;
+    }
+    .footer-main-item {
+      max-width: 100%;
+   }
+}
+/* Portables et petits écrans */
+@media screen and (max-width: 576px){
+   .footer-legal ul {
+      flex-direction: column;
+    }
+}
