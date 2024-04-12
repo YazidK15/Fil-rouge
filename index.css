@@ -27,7 +27,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 33%;
  }
  .footer-icon-container {
     display: flex;
