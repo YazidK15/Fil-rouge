@@ -27,7 +27,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 0 24px;
+    max-width: 33%;
  }
  .footer-icon-container {
     display: flex;
@@ -56,19 +56,39 @@ img {
    width: 1px;
    background-color: #96A3B5;
  }
+ .footer-legal {
+   background-color: white;
+ }
+ .footer-legal ul {
+   max-width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   list-style: none;
+   font-size: 14px;
+   padding: 24px 0;
+ }
+ .footer-legal ul li a {
+   text-decoration: none;
+ }
 
  /* RESPONSIVE BREAKPOINTS */ 
 /* Tablettes et moyennes écrans */
 @media screen and (max-width: 992px){
-   .footer-main {
-      max-width: 94%;
-      justify-content: flex-start;
-   }
+   .footer-main, .footer-legal ul {
+      max-width: 94%;   }
    .vertical-divider {
       display: none;
     }
+    .footer-main-item {
+      max-width: 100%;
+   }
 }
 /* Portables et petits écrans */
 @media screen and (max-width: 576px){
-    
+   .footer-legal ul {
+      flex-direction: column;
+    }
 }
