@@ -23,15 +23,24 @@ a {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin: 15px auto;
+    width: 1200px;
+}
+
+.links_header {
+    margin-right: 40px;
 }
 
 .logo_header {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.logo_header img {
+    width: 50px;
 }
 
 .logo_header h1 {
@@ -51,10 +60,9 @@ header {
     display: flex;
 }
 
-a.anchor_link {
+.links_header a:hover, .icons_header span:hover, .links_actif {
     font-weight: bold;
-    text-decoration: underline;
-    color: #56B280;
+    color:#56B280;
 }
 
 /* Jumbotron */
@@ -64,6 +72,7 @@ a.anchor_link {
     height: 600px;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
