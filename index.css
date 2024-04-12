@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
-    color: #2A3342;
+    color: black;
 }
 img {
     width: 100%;
@@ -14,6 +14,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header */
 
 header {
@@ -21,7 +25,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    /* background-color: red; */
     padding: 0px 20px;
 }
 
@@ -30,4 +34,23 @@ header {
     flex-direction: row;
     align-items: center;
     
+}
+
+.links_header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.links_header li, .icons_header li {
+    margin: 15px;   
+}
+
+.icons_header ul {
+    display: flex;
+}
+
+.anchor_links {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #56B280;
 }
