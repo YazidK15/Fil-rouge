@@ -5,3 +5,55 @@
     font-family: "Poppins";
     color: #2A3342;
 }
+
+/* Notre sélection du moment */
+
+.notreSelection {
+    background-color:#E2E2E2 ;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowerBoxes {
+    
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 292px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px 1px rgb(186, 183, 183);
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.porductImg {
+    width: 272px;
+    height: 174px;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+
+
+
+
+
