@@ -3,6 +3,200 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
+    color: black;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    width: 80%;
+}
+
+.links_header {
+    margin-right: 40px;
+}
+
+.logo_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_header img {
+    width: 50px;
+}
+
+.logo_header h1 {
+    font-weight: normal;
+}
+
+.links_header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.links_header li, .icons_header li {
+    margin: 15px;   
+}
+
+.icons_header ul {
+    display: flex;
+}
+
+.links_header a:hover, .icons_header span:hover, .links_actif {
+    font-weight: bold;
+    color:#56B280;
+}
+
+/* Jumbotron */
+
+#jumbotron {
+    background-image: url(./assets/images/jumbotron.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jumbotron_box {
+    background-color: #eee9e8f1;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+#jumbotron_text h2{
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+#jumbotron_text p {
+    font-size: 14px;
+    display: inline-block;
+    width: 500px;
+}
+
+#jumbotron_button button {
+    background-color: #56B280;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 35%;
+    margin-bottom: 30px;
+    border: #56B280;
+}
+
+#jumbotron_button button:hover {
+    cursor: pointer;
+}
+
+ /* Footer */
+ footer {
+    background-color: #DAEFF1;
+ }
+ .footer-main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 0;
+ }
+ .footer-main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+ .footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+ }
+ footer .footer-title {
+    font-weight: 700;
+ }
+ footer .footer-subtitle {
+    font-size: 14px;
+ }
+ .footer-icon {
+    width: 40px;
+ }
+ footer img {
+    height: auto;
+ }
+ .footer-main-item a {
+   padding-right: 8px;
+ }
+ .footer-main-item a .footer-icon {
+   width: 30px;
+ }
+ .vertical-divider {
+   width: 1px;
+   background-color: #96A3B5;
+ }
+ .footer-legal {
+   background-color: white;
+ }
+ .footer-legal ul {
+   max-width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   list-style: none;
+   font-size: 14px;
+   padding: 24px 0;
+ }
+ .footer-legal ul li a {
+   text-decoration: none;
+ }
+
+ /* RESPONSIVE BREAKPOINTS */ 
+/* Tablettes et moyennes écrans */
+@media screen and (max-width: 992px){
+   .footer-main, .footer-legal ul {
+      max-width: 94%;   }
+   .vertical-divider {
+      display: none;
+    }
+    .footer-main-item {
+      max-width: 100%;
+   }
+}
+/* Portables et petits écrans */
+@media screen and (max-width: 576px){
+   .footer-legal ul {
+      flex-direction: column;
+    }
+}
     color: #2A3342;
 }
 
