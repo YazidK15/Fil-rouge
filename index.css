@@ -1,11 +1,8 @@
-@font-face {
-    font-family: Poppins;
-    src: url(./Assets/Fonts/Poppins.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-    font-family: Poppins;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #2A3342;
 }
+
