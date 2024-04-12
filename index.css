@@ -5,3 +5,25 @@
     font-family: "Poppins";
     color: #2A3342;
 }
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 0px 20px;
+}
+
+.logo_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
