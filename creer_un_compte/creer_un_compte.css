@@ -5,6 +5,9 @@
     font-family: "Poppins";
     color: #2A3342;
 }
+.creer_compte{
+    background-color: #F4F6F6;
+}
 
 .creer_compte_contener{
     display: flex;
@@ -25,4 +28,16 @@ input{
 }
 .contener_img img{
     width: 100%;
+}
+.prenom{
+    margin-top: 30px;
+}
+.nom{
+    margin-top: 30px;
+}
+.creer_email{
+    margin-top: 30px;
+}
+.creer_password{
+    margin-top: 30px;
 }
