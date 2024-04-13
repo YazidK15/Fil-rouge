@@ -125,6 +125,7 @@ header {
 .image_container {
     width: 250px;
     height: 150px;
+    border-radius: 10px;
 }
 
 #selection {
@@ -152,4 +153,43 @@ header {
     display: inline-block;
     width: 700px;
     font-size: 15px;
+}
+
+#selection li {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.price_quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price {
+    color: #33a9ff;
+}
+
+.quantity {
+    border: 1px solid gray;
+    width: 90px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.quantity_value {
+    border: 1px solid gray;
+    margin: 10px;
+}
+
+.decrease, .increase {
+    border: none;
+    background-color: white;
+    font-size: 20px;
 }
