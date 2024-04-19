@@ -114,6 +114,7 @@ header {
 
 #jumbotron_button button:hover {
     cursor: pointer;
+    background-color: #428a63;
 }
 
 /* Sélection du moment */
@@ -155,6 +156,11 @@ header {
     border: none;
     border-radius: 5px;
     margin: 15px;
+    cursor: pointer;
+}
+
+#button_discovery:hover {
+    background-color: #428a63;
 }
 
 #shop_description p {
@@ -174,6 +180,10 @@ header {
     padding: 10px;
 }
 
+.menu_description p {
+    margin-top: 10px;
+}
+
 .price_quantity {
     display: flex;
     flex-direction: row;
@@ -183,22 +193,29 @@ header {
 
 .price {
     color: #33a9ff;
+    font-weight: 600;
 }
-/*  */
+
 .quantity {
-    border: 1px solid gray;
-    width: 90px;
-    border-radius: 5px;
-    text-align: center;
+    border: 1px solid rgb(217, 217, 217);
+    width: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .quantity_value {
-    border: 1px solid gray;
-    margin: 10px;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0px 10px;
+    font-size: 10px;
 }
 
 .decrease, .increase {
     border: none;
     background-color: white;
     font-size: 20px;
+    margin: 0px 5px;
+    padding: 0px 4px;
+    cursor: pointer;
 }
