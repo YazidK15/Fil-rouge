@@ -63,7 +63,24 @@
                         </div>
                         <span class="cart-item-description">Assortiment de 10 tulipes - aux couleurs de l’été</span>
                         <div class="cart-item-pricing">
-                            <input type="number" name="quantity" id="quantity" placeholder="0">
+                            <input type="number" name="quantity" id="quantity" placeholder="1">
+                            <button><span class="material-icons-outlined">delete</span></button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-item">
+                    <div class="cart-item-img-container">
+                        <img src="./assets/pivoines.png" alt="Bouquet de pivoines">
+                    </div>
+                    <div class="cart-item-details">
+                        <div class="cart-item-header">
+                            <span class="cart-item-title">Bouquet de pivoines</span>
+                            <span class="cart-item-price">45,99€</span>
+                        </div>
+                        <span class="cart-item-description">Pivoines roses ou blanches selon arrivage</span>
+                        <div class="cart-item-pricing">
+                            <input type="number" name="quantity" id="quantity" placeholder="1">
                             <button><span class="material-icons-outlined">delete</span></button>
                         </div>
                     </div>
@@ -71,13 +88,18 @@
             </div>
             <div class="cart-checkout">
                 <div class="cart-checkout-subtotal">
-                    <p>Sous-total : </p>
+                    <p>Sous-total</p>
                     <p>29,99€</p>
                 </div>
                 <div class="cart-checkout-delivery">
-                    <p>Livraison: </p>
+                    <p>Livraison</p>
                     <p>7€</p>
                 </div>
+                <div class="cart-checkout-total">
+                    <p>TOTAL</p>
+                    <p class="cart-item-price">36,99€</p>
+                </div>
+                <button>Paiement</button>
             </div>
         </section>
     </main>
