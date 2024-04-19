@@ -67,14 +67,16 @@ header {
 /* Shopping cart - Summary */
 main {
     background-color: #F4F6F6;
-    padding: 32px 0;
+    padding: 32px 0 64px;
 }
 main section {
-    display: flex;
+   /* display: flex;
     align-items: flex-start;
     gap: 24px;
-    max-width: 80%;
+*/
+    max-width: 90%;
     margin: auto;
+    gap: 24px;
 }
 h2 {
     font-size: 30px;
@@ -151,10 +153,29 @@ hr {
 .cart-item-pricing .material-icons-outlined {
     color: #4D5F7A;
 }
-.cart-item-pricing input {
-    max-width: 20%;
+.quantity {
+    border: 1px solid rgb(217, 217, 217);
+    width: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.quantity_value {
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0px 10px;
+    font-size: 10px;
+}
+
+.decrease, .increase {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 0px 4px;
+    cursor: pointer;
+}
 
 /* Shopping cart - checkout */
 .cart-checkout {
@@ -178,6 +199,7 @@ hr {
 .cart-checkout-delivery  {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 16px;
 }
 .delivery-details {
     width: 100%;
@@ -305,5 +327,16 @@ hr {
 @media screen and (max-width: 576px){
    .footer-legal ul {
       flex-direction: column;
+    }
+}
+
+/* Mobile first pour flexbox */
+@media screen and (min-width: 992px){
+    main section {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        max-width: 80%;
+        margin: auto;
     }
 }
