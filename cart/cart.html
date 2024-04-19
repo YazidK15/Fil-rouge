@@ -91,15 +91,48 @@
                     <p>Sous-total</p>
                     <p>29,99€</p>
                 </div>
-                <div class="cart-checkout-delivery">
+                <!-- <div class="cart-checkout-delivery">
                     <p>Livraison</p>
                     <p>7€</p>
+                </div> -->
+                <div class="cart-checkout-delivery">
+                    <div class="delivery-details">
+                        <div>
+                            <input type="radio" name="delivery" id="domicile" checked>
+                            <label for="domicile">Livraison à domicile</label>
+                        </div>
+                        <span>10€</span>
+                    </div>
+                    <div class="delivery-details">
+                        <div>
+                            <input type="radio" name="delivery" id="domicile">
+                            <label for="domicile">Retrait Mondial Relay</label>
+                        </div>
+                        <span>5€</span>
+                    </div>
                 </div>
                 <div class="cart-checkout-total">
                     <p>TOTAL</p>
                     <p class="cart-item-price">36,99€</p>
                 </div>
                 <button>Paiement</button>
+                <div class="cart-checkout-payment">
+                    <p>Nous acceptons</p>
+                    <div class="cart-checkout-payment-icon">
+                        <div class="footer-icon">
+                            <img src="../assets/icons/footer/carte-bancaire.png" alt="Icône paiement par carte bancaire">
+                        </div>
+                        <div class="footer-icon">
+                            <img src="../assets/icons/footer/visa.png" alt="Icône paiement par Visa">
+                        </div>
+                        <div class="footer-icon">
+                            <img src="../assets/icons/footer/mastercard.png" alt="Icône paiement par Mastercard">
+                        </div>
+                        <div class="footer-icon">
+                            <img src="../assets/icons/footer/klarna.png" alt="Icône paiement par Klarna">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
