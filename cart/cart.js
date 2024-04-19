@@ -9,3 +9,4 @@ function decrease (index) {
         test[index].value = parseInt(test[index].value) - 1
     }
 }
+
