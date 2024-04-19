@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #2A3342;
+}
+.contact{
+    background-color: #F4F6F6;
+}
+.contact_contener{
+    display: flex;
+}
+label{
+    font-weight: 500;
+}
+input{
+    margin-top: 5px;
+    border: 1px solid #D5DAE1;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+}
+form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.form{
+    width: 60%;
+    margin-top: 20px;
+}
+.contener_img{
+    
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(./contact_photo.jpg);
+}
+.ligne_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ligne_two{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prenom{
+    margin-right: 10px;
+}
+
+.contact_email{
+    margin-right: 10px;
+}
+.text_area{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#textarea{
+    margin-top: 5px;
+    align-self: center;
+    border: 1px solid #D5DAE1;
+    border-radius: 6px;
+}
+#message{
+    margin-left: 30px;
+}
+#envoiyer_button{
+    margin-top: 15px;
+    background-color: #56B280;
+    color: white;
+    padding: 10px 131px;
+    border-style: none;
+    border-radius: 10px;
+}
+#envoiyer_button:hover{
+    cursor: pointer;
+    background-color: #468b65;
+}
+@media screen and (max-width: 600px) {
+    .contener_img{
+        display: none;
+    }
+    form{
+        width: 70%;
+    }
+    .form{
+        width: 90%;
+    }
+    input{
+        padding: 5px 30px;  
+        width: 100%;
+    }
+    h2{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .prenom{
+    margin-top: 10px;
+    }
+    .nom{
+    margin-top: 10px;
+    }
+    .creer_email{
+    margin-top: 10px;
+    }
+    .creer_password{
+    margin-top: 10px;
+    }
+    #green{
+        margin-top: 5px;
+        color: #56B280;
+        font-size: 15px;
+    }
+    #creer_compte_button{
+    margin-top: 10px;
+    background-color: #56B280;
+    color: white;
+    padding: 5px 25px;
+    border-style: none;
+    border-radius: 10px;
+    }
+    .lien_login{
+        display: flex;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
