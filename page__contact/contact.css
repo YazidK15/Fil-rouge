@@ -56,11 +56,18 @@ form{
     flex-grow: 1;
 }
 .prenom{
+    flex-grow: 1;
     margin-right: 10px;
 }
-
+.nom{
+    flex-grow: 1;
+}
 .contact_email{
+    flex-grow: 1;
     margin-right: 10px;
+}
+.num_tel{
+    flex-grow: 1;
 }
 .text_area{
     margin-top: 20px;
@@ -79,20 +86,38 @@ form{
     border-radius: 6px;
     padding: 10px;
 }
-#message{
-    margin-left: 18px;
-}
 #envoiyer_boutton{
     margin-top: 15px;
     background-color: #56B280;
     color: white;
-    padding: 10px 140px;
+    padding: 10px 155px;
     border-style: none;
     border-radius: 10px;
 }
 #envoiyer_boutton:hover{
     cursor: pointer;
     background-color: #468b65;
+}
+@media screen  and (max-width: 992px){
+    .form{
+        width: 90%;
+        margin-top: 20px;
+    }
+    input{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+    #envoiyer_boutton{
+        margin-top: 15px;
+        background-color: #56B280;
+        color: white;
+        padding: 10px 148px;
+        border-style: none;
+        border-radius: 10px;
+    }
 }
 @media screen and (max-width: 600px) {
     .ligne_un{
