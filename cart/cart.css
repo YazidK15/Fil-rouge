@@ -120,6 +120,7 @@ hr {
 .cart-item-title {
     font-size: 22px;
     margin-bottom: 8px;
+    padding-right: 16px;
 }
 .cart-item-price {
     color: #32A9FF;
@@ -198,6 +199,13 @@ hr {
     align-items: flex-start;
     margin-bottom: 16px;
 }
+input[type="radio"]:checked + label, div:has([type="radio"]:checked ) > span{
+    color: #56B280;
+}
+input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
+    cursor: pointer;
+}
+
 .delivery-details {
     width: 100%;
     display: flex;
@@ -324,6 +332,10 @@ hr {
 @media screen and (max-width: 576px){
    .footer-legal ul {
       flex-direction: column;
+    }
+    .cart-item-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
