@@ -180,7 +180,9 @@ hr {
     flex-direction: column;
     align-items: flex-start;
 }
-
+input[name="delivery"] {
+	accent-color: #32A9FF;
+}
 .delivery-details {
     width: 100%;
     display: flex;
