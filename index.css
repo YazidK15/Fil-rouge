@@ -286,11 +286,10 @@ header {
  /* Javascript sur les input  */
 
 .quantity_value::-webkit-inner-spin-button, .quantity_value::-webkit-outer-spin-button {
-    -webkit-appearance: none;  /*Pour Safari et Chrome */
+    -webkit-appearance: none;  
 }
 
 .quantity_value {
-    -moz-appearance: textfield; /* Pour firefox */
     width: 35px;
     text-align: center;
     font-weight: 500;
