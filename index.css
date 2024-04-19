@@ -148,6 +148,15 @@ header {
     font-size: 30px;
 }
 
+#button_discovery {
+    background-color: #56B280;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
 #shop_description p {
     margin-bottom: 20px;
     display: inline-block;
