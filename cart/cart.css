@@ -19,7 +19,6 @@ a {
 }
 
 /* Header */
-
 header {
     display: flex;
     flex-direction: row;
@@ -179,9 +178,6 @@ hr {
 .cart-checkout-delivery  {
     flex-direction: column;
     align-items: flex-start;
-}
-input[name="delivery"] {
-	accent-color: #32A9FF;
 }
 .delivery-details {
     width: 100%;
