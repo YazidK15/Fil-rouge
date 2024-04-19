@@ -64,9 +64,9 @@
                         <span class="cart-item-description">Assortiment de 10 tulipes - aux couleurs de l’été</span>
                         <div class="cart-item-pricing">
                             <div class="quantity">
-                                <button class="decrease">-</button>
-                                <span class="quantity_value">0</span>
-                                <button class="increase">+</button>
+                                <button class="decrease" onclick="decrease(0)">-</button>
+                                <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                                <button class="increase" onclick="increment(0)">+</button>
                             </div>
                             <button><span class="material-icons-outlined">delete</span></button>
                         </div>
@@ -85,10 +85,10 @@
                         <span class="cart-item-description">Pivoines roses ou blanches selon arrivage</span>
                         <div class="cart-item-pricing">
                             <div class="quantity">
-                                <button class="decrease">-</button>
-                                <span class="quantity_value">0</span>
-                                <button class="increase">+</button>
-                            </div>
+                                <button class="decrease" onclick="decrease(1)">-</button>
+                                <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                                <button class="increase" onclick="increment(1)">+</button>
+                              </div>
                             <button><span class="material-icons-outlined">delete</span></button>
                         </div>
                     </div>
@@ -212,5 +212,6 @@
             </ul>
         </div>
     </footer>
+    <script src="./cart.js"></script>
 </body>
 </html>
