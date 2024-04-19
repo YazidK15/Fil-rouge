@@ -103,7 +103,7 @@ header {
 #jumbotron_text p {
     font-size: 14px;
     display: inline-block;
-    width: 500px;
+    width: 90%;
 }
 
 #jumbotron_button button {
@@ -170,7 +170,7 @@ header {
 #shop_description p {
     margin-bottom: 20px;
     display: inline-block;
-    width: 700px;
+    width: 80%;
     font-size: 15px;
 }
 
@@ -326,11 +326,24 @@ header {
     .footer-main-item {
       max-width: 100%;
    }
+
+   header {
+    display: flex;
+    flex-direction: column;
+   }
 }
 /* Portables et petits écrans */
 @media screen and (max-width: 576px){
    .footer-legal ul {
       flex-direction: column;
+    }
+
+    #jumbotron_button button {
+        width: 60%
+    }
+
+    #jumbotron_text p {
+        width: 100%;
     }
 }
 
