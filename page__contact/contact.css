@@ -47,6 +47,7 @@ form{
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .ligne_deux{
     margin-top: 10px;
@@ -54,17 +55,16 @@ form{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    gap: 10px;
 }
 .prenom{
     flex-grow: 1;
-    margin-right: 10px;
 }
 .nom{
     flex-grow: 1;
 }
 .contact_email{
     flex-grow: 1;
-    margin-right: 10px;
 }
 .num_tel{
     flex-grow: 1;
@@ -75,9 +75,10 @@ form{
     flex-grow: 1;
     flex-direction: column;
     justify-content: center;
-}
-.text_area{
     margin-top: 10px;
+}
+textarea{
+    width: 100%;
 }
 #textarea{
     margin-top: 5px;
@@ -86,11 +87,12 @@ form{
     border-radius: 6px;
     padding: 10px;
 }
-#envoiyer_boutton{
+#envoyer_boutton{
     margin-top: 15px;
     background-color: #56B280;
     color: white;
-    padding: 10px 155px;
+    padding: 10px;
+    width: 100%;
     border-style: none;
     border-radius: 10px;
 }
@@ -128,18 +130,18 @@ form{
         margin-top: 0px;
     }
     .prenom{
-        width: 90%;
+        width: 100%;
         margin-right: 0px;
     }
     .contact_email{
-        width: 90%;
+        width: 100%;
         margin-right: 0px;
     }
     .nom{
-        width: 90%;
+        width: 100%;
     }
     .num_tel{
-        width: 90%;
+        width: 100%;
     }
     .conteneur_img{
         display: none;
@@ -164,18 +166,15 @@ form{
     label{
         font-size: 10px;
     }
-    #message{
-        margin-left: 11px;
-    }
     textarea{
-        width: 90%;
+        width: 100%;
         font-size: 10px;
     }
-    #envoiyer_boutton{
+    #envoyer_boutton{
     margin-top: 10px;
     background-color: #56B280;
     color: white;
-    padding: 5px 24px;
+    padding: 5px;
     border-style: none;
     border-radius: 10px;
     }
