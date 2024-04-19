@@ -1,19 +1,19 @@
-var test = document.getElementsByClassName("quantity_value")
+var quantity = document.getElementsByClassName("quantity_value")
 
 function increment (index) {
-    test[index].value = parseInt(test[index].value) + 1
+    quantity[index].value = parseInt(quantity[index].value) + 1
 }
 
+
 function decrease (index) {
-    if (test[index].value > 0) {
-        test[index].value = parseInt(test[index].value) - 1
+    if (quantity[index].value > 0) {
+        quantity[index].value = parseInt(quantity[index].value) - 1
     }
 }
 
 
-
-var test2 = document.getElementsByClassName("cart-item")
+var cart = document.getElementsByClassName("cart-item")
 
 function deleteItem (index) {
-    test2[index].style.display = "none";
+    cart[index].style.display = "none";
 }
