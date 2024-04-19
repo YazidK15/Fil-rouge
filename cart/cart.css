@@ -162,10 +162,11 @@ hr {
     justify-content: space-between;
 }
 
+
 .quantity_value {
     border: 1px solid rgb(217, 217, 217);
-    padding: 0px 10px;
     font-size: 10px;
+    width: 40px;
 }
 
 .decrease, .increase {
