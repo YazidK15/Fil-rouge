@@ -8,7 +8,7 @@
 .contact{
     background-color: #F4F6F6;
 }
-.contact_contener{
+.contact_conteneur{
     display: flex;
 }
 label{
@@ -18,7 +18,7 @@ input{
     margin-top: 5px;
     border: 1px solid #D5DAE1;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     width: 100%;
 }
 form{
@@ -33,7 +33,7 @@ form{
     width: 60%;
     margin-top: 20px;
 }
-.contener_img{
+.conteneur_img{
     flex-basis: 50%;
     height: 100vh;
     background-size: cover;
@@ -42,16 +42,18 @@ form{
     background-attachment: scroll;
     background-image: url(./contact_photo.jpg);
 }
-.ligne_one{
+.ligne_un{
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
 }
-.ligne_two{
+.ligne_deux{
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 .prenom{
     margin-right: 10px;
@@ -63,6 +65,7 @@ form{
 .text_area{
     margin-top: 20px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
 }
@@ -71,24 +74,25 @@ form{
     align-self: center;
     border: 1px solid #D5DAE1;
     border-radius: 6px;
+    padding: 10px;
 }
 #message{
     margin-left: 30px;
 }
-#envoiyer_button{
+#envoiyer_boutton{
     margin-top: 15px;
     background-color: #56B280;
     color: white;
-    padding: 10px 131px;
+    padding: 10px 140px;
     border-style: none;
     border-radius: 10px;
 }
-#envoiyer_button:hover{
+#envoiyer_boutton:hover{
     cursor: pointer;
     background-color: #468b65;
 }
 @media screen and (max-width: 600px) {
-    .contener_img{
+    .conteneur_img{
         display: none;
     }
     form{
@@ -98,6 +102,9 @@ form{
         width: 90%;
     }
     input{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
         padding: 5px 30px;  
         width: 100%;
     }
@@ -106,36 +113,21 @@ form{
         margin-top: 20px;
     }
     label{
-        font-size: 15px;
+        font-size: 10px;
     }
-    .prenom{
-    margin-top: 10px;
+    #message{
+        margin-left: 1px;
     }
-    .nom{
-    margin-top: 10px;
+    textarea{
+        width: 100%;
+        font-size: 10px;
     }
-    .creer_email{
-    margin-top: 10px;
-    }
-    .creer_password{
-    margin-top: 10px;
-    }
-    #green{
-        margin-top: 5px;
-        color: #56B280;
-        font-size: 15px;
-    }
-    #creer_compte_button{
+    #envoiyer_boutton{
     margin-top: 10px;
     background-color: #56B280;
     color: white;
-    padding: 5px 25px;
+    padding: 5px 28px;
     border-style: none;
     border-radius: 10px;
-    }
-    .lien_login{
-        display: flex;
-        margin-top: 20px;
-        font-size: 15px;
     }
 }
