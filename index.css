@@ -283,6 +283,20 @@ header {
    text-decoration: none;
  }
 
+ /* Javascript sur les input  */
+
+.quantity_value::-webkit-inner-spin-button, .quantity_value::-webkit-outer-spin-button {
+    -webkit-appearance: none;  /*Pour Safari et Chrome */
+}
+
+.quantity_value {
+    -moz-appearance: textfield; /* Pour firefox */
+    width: 35px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+
  /* RESPONSIVE BREAKPOINTS */ 
 /* Tablettes et moyennes écrans */
 @media screen and (max-width: 992px){

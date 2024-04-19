@@ -76,9 +76,9 @@
                   <div class="price_quantity">
                     <span class="price">29.99€  </span>  
                     <div class="quantity">
-                      <button class="decrease">-</button>
-                      <span class="quantity_value">0</span>
-                      <button class="increase">+</button>
+                      <button class="decrease" onclick="decrease(0)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(0)">+</button>
                     </div>
                   </div>
                 </div>
@@ -97,9 +97,9 @@
                   <div class="price_quantity">
                     <span class="price">45.99€  </span>  
                     <div class="quantity">
-                      <button class="decrease">-</button>
-                      <span class="quantity_value">0</span>
-                      <button class="increase">+</button>
+                      <button class="decrease" onclick="decrease(1)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(1)">+</button>
                     </div>
                   </div>
                 </div>
@@ -118,9 +118,9 @@
                   <div class="price_quantity">
                     <span class="price">32.99€  </span>  
                     <div class="quantity">
-                      <button class="decrease" onclick="decrease()">-</button>
-                      <input type="number" min="0" class="quantity_value" value="0"/>
-                      <button class="increase" onclick="increment()">+</button>
+                      <button class="decrease" onclick="decrease(2)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(2)">+</button>
                     </div>
                   </div>
                 </div>
@@ -139,9 +139,9 @@
                   <div class="price_quantity">
                     <span class="price">24.99€</span>  
                     <div class="quantity">
-                      <button class="decrease" onclick="decrease()">-</button>
-                      <input type="number" min="0" class="quantity_value" value="0"/>
-                      <button class="increase" onclick="increment()">+</button>
+                      <button class="decrease" onclick="decrease(3)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(3)">+</button>
                     </div>
                   </div>
                 </div>
