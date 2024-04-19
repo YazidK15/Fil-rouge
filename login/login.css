@@ -80,6 +80,14 @@ form{
 #nouveau_client{
     font-weight: bold;
 }
+@media screen and (max-width: 992px) {
+    #green_password{
+        width: 47%;
+    }
+    #login_button{
+        padding: 15px 115px;
+    }
+}
 @media screen and (max-width: 600px) {
     .contener_img{
         display: none;
