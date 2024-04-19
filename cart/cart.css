@@ -19,7 +19,6 @@ a {
 }
 
 /* Header */
-
 header {
     display: flex;
     flex-direction: row;
@@ -65,16 +64,193 @@ header {
     color:#56B280;
 }
 
-/* Shopping cart */
+/* Shopping cart - Summary */
 main {
     background-color: #F4F6F6;
+    padding: 32px 0 64px;
+}
+main section {
+    max-width: 90%;
+    margin: auto;
 }
 h2 {
-    font-weight: bold;
     font-size: 30px;
-    text-align: center;
+    font-weight: bold;
     max-width: 80%;
     margin: auto;
+    padding: 32px 0;
+    text-align: center;
+}
+
+/* Shopping cart - Summary */
+.cart-summary {
+    background-color: white;
+    border: #D5DAE1 1px solid;
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 32px;
+    flex-grow: 2;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 32px 0;
+}
+hr {
+    background-color: #D5DAE1;
+    height: 1px;
+    border: none;
+}
+.cart-item-img-container {
+    max-width: 130px;
+    max-height: 130px;
+}
+.cart-item-img-container img {
+    border-radius: 16px;
+}
+.cart-item-details {
+    flex-grow: 1;
+}
+.cart-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-item-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+    padding-right: 16px;
+}
+.cart-item-price {
+    color: #32A9FF;
+    font-weight: 600;
+    font-size: 18px;
+}
+.cart-item-description {
+    color: #4D5F7A;
+    margin-bottom: 24px;
+}
+.cart-item-pricing {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+.cart-item-pricing button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.cart-item-pricing button:hover .material-icons-outlined {
+    color: #c40000;
+}
+.cart-item-pricing .material-icons-outlined {
+    color: #4D5F7A;
+}
+.quantity {
+    border: 1px solid rgb(217, 217, 217);
+    width: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.quantity_value {
+    border: 1px solid rgb(217, 217, 217);
+    width: 40px;
+    text-align: right;
+}
+
+.decrease, .increase {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+/* Shopping cart - checkout */
+.cart-checkout {
+    background-color: white;
+    border: #D5DAE1 1px solid;
+    border-radius: 24px;
+    padding: 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cart-checkout-subtotal, .cart-checkout-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cart-checkout-delivery  {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+input[type="radio"]:checked + label, div:has([type="radio"]:checked ) > span{
+    color: #56B280;
+}
+input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
+    cursor: pointer;
+}
+
+.delivery-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-checkout-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid #D5DAE1;
+    padding: 24px 0;
+}
+.cart-checkout select {
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.cart-checkout button {
+    background-color: #56B280;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    padding: 6px 0;
+}
+.cart-checkout button:hover {
+    background-color: #468b65;
+    cursor: pointer;
+}
+.cart-checkout-payment-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.cart-checkout-payment p {
+    margin: 40px 0 8px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cart-checkout-payment-icon img {
+    height: auto;
 }
 
  /* Footer */
@@ -95,7 +271,7 @@ h2 {
     flex-direction: column;
     gap: 8px;
  }
- .footer-icon-container {
+ .footer-icon-container  {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -156,5 +332,20 @@ h2 {
 @media screen and (max-width: 576px){
    .footer-legal ul {
       flex-direction: column;
+    }
+    .cart-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Mobile first pour flexbox */
+@media screen and (min-width: 992px){
+    main section {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        max-width: 80%;
+        margin: auto;
     }
 }
