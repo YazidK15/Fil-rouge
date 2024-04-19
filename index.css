@@ -114,6 +114,110 @@ header {
 
 #jumbotron_button button:hover {
     cursor: pointer;
+    background-color: #428a63;
+}
+
+/* Sélection du moment */
+
+#shop {
+    background-color: #daeff1;
+}
+
+.image_container {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+#selection ul {
+    display: flex;
+}
+
+#selection h2 {
+    padding: 20px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+#button_discovery {
+    background-color: #56B280;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#button_discovery:hover {
+    background-color: #428a63;
+}
+
+#shop_description p {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 700px;
+    font-size: 15px;
+}
+
+#selection li {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.menu_description p {
+    margin-top: 10px;
+}
+
+.price_quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price {
+    color: #33a9ff;
+    font-weight: 600;
+}
+
+.quantity {
+    border: 1px solid rgb(217, 217, 217);
+    width: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity_value {
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0px 10px;
+    font-size: 10px;
+}
+
+.decrease, .increase {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 0px 4px;
+    cursor: pointer;
 }
 
  /* Footer */
@@ -197,3 +301,13 @@ header {
       flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
+
