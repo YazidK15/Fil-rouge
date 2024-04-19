@@ -286,6 +286,21 @@ header {
  /* RESPONSIVE BREAKPOINTS */ 
 /* Tablettes et moyennes écrans */
 @media screen and (max-width: 992px){
+    #selection ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #jumbotron_box {
+        width: 60%;
+    }
+
+    .links_header ul {
+        align-items: center;
+        margin-left: 10px;
+    }
+
    .footer-main, .footer-legal ul {
       max-width: 94%;   }
    .vertical-divider {
