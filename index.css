@@ -399,6 +399,37 @@ header {
     cursor: pointer;
 }
 
+/* section_three */
+
+.about_us {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.about_us_description {
+    width: 50%;
+}
+
+.statistics_section_icon {
+    width: 25px;
+}
+
+.statistics_section p{
+    color: blue;
+    font-size: bold;
+}
+
+.statistics_number {
+    font-size: xx-large;
+}
+
+.vendeuse_img_container img{
+    width: 50%;
+}
+
+
+
 
 
 
