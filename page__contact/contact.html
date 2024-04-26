@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./contact.css">
     <title>floral</title>
 </head>
@@ -15,7 +16,45 @@
          <section></section>
          <section></section>
          <section></section>
-         <section></section>
+         <section class="contact">
+            <div class="contact_conteneur">
+                <form>
+                    <h2>Contact</h2>
+                    <div class="form">
+                        <div class="ligne_un">
+                            <div class="prenom">
+                                <label for="name">Votre Prénom*</label> <br>
+                                <input type="text" placeholder="Jane">
+                            </div>
+                            <div class="nom">
+                                <label for="ursename">Votre Nom*</label> <br>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="ligne_deux">
+                            <div class="contact_email">
+                                <label for="email">Email*</label> <br>
+                                <input type="email" placeholder="jane.doe@gmail.com">
+                            </div>
+                            <div class="num_tel">
+                                <label for="phone">Mot de passe*</label> <br>
+                                <input type="phone" placeholder="+33 00 00 00 00 00">
+                            </div>
+                        </div>
+                        <div class="text_area">
+                            <label id="message" for="message">Message *</label>
+                            <textarea name="message" id="textarea" cols="65" rows="7" placeholder="Votre message"></textarea>
+                        </div>
+                            <button id="envoyer_boutton">Envoyer le messsage</button>
+                        </div>
+                        
+                   
+                </form>
+                <div class="conteneur_img">
+            
+                </div>
+            </div>
+         </section>
      </main>
      <!-- Footer -->
      <footer></footer>
