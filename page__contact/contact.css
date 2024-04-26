@@ -209,27 +209,71 @@ footer {
  .footer-legal ul li a {
    text-decoration: none;
  }
-@media screen  and (max-width: 992px){
-    .form{
-        width: 90%;
-        margin-top: 20px;
-    }
-    input{
-        font-size: 13px;
+ /* Tablettes et moyennes écrans */
+@media screen and (max-width: 992px){
+    #selection ul {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    #jumbotron_box {
+        width: 60%;
+    }
+
+    .links_header ul {
+        align-items: center;
+        margin-left: 10px;
+    }
+
+   .footer-main, .footer-legal ul {
+      max-width: 94%;   }
+   .vertical-divider {
+      display: none;
+    }
+    .footer-main-item {
+      max-width: 100%;
+   }
+
+   header {
+    display: flex;
+    flex-direction: column;
+   }
+   .form{
+    width: 90%;
+    margin-top: 20px;
+}
+input{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+#envoiyer_boutton{
+    margin-top: 15px;
+    background-color: #56B280;
+    color: white;
+    padding: 10px 148px;
+    border-style: none;
+    border-radius: 10px;
+}
+}
+/* Portables et petits écrans */
+@media screen and (max-width: 576px){
+   .footer-legal ul {
+      flex-direction: column;
+    }
+
+    #jumbotron_button button {
+        width: 60%
+    }
+
+    #jumbotron_text p {
         width: 100%;
     }
-    #envoiyer_boutton{
-        margin-top: 15px;
-        background-color: #56B280;
-        color: white;
-        padding: 10px 148px;
-        border-style: none;
-        border-radius: 10px;
-    }
 }
+
 @media screen and (max-width: 600px) {
     .ligne_un{
         flex-direction: column;
