@@ -5,6 +5,21 @@
     font-family: "Poppins";
     color: #2A3342;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* header */
 
 header {
@@ -147,7 +162,7 @@ textarea{
     cursor: pointer;
     background-color: #468b65;
 }
-/* footer */
+/* Footer */
 footer {
     background-color: #DAEFF1;
  }
@@ -165,7 +180,7 @@ footer {
     flex-direction: column;
     gap: 8px;
  }
- .footer-icon-container {
+ .footer-icon-container  {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -209,6 +224,7 @@ footer {
  .footer-legal ul li a {
    text-decoration: none;
  }
+
  /* Tablettes et moyennes écrans */
 @media screen and (max-width: 992px){
     #selection ul {
