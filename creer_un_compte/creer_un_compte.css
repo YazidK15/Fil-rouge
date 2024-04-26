@@ -5,6 +5,52 @@
     font-family: "Poppins";
     color: #2A3342;
 }
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    width: 80%;
+}
+
+.links_header {
+    margin-right: 40px;
+}
+
+.logo_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_header img {
+    width: 50px;
+}
+
+.logo_header h1 {
+    font-weight: normal;
+}
+
+.links_header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.links_header li, .icons_header li {
+    margin: 15px;   
+}
+
+.icons_header ul {
+    display: flex;
+}
+
+.links_header a:hover, .icons_header span:hover, .links_actif {
+    font-weight: bold;
+    color:#56B280;
+}
+/* creer un compte */
 .creer_compte{
     background-color: #F4F6F6;
 }
@@ -81,6 +127,68 @@ form{
 #deja_client{
     font-weight: 600;
 }
+/* footer */
+footer {
+    background-color: #DAEFF1;
+ }
+ .footer-main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 0;
+ }
+ .footer-main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+ .footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+ }
+ footer .footer-title {
+    font-weight: 700;
+ }
+ footer .footer-subtitle {
+    font-size: 14px;
+ }
+ .footer-icon {
+    width: 40px;
+ }
+ footer img {
+    height: auto;
+ }
+ .footer-main-item a {
+   padding-right: 8px;
+ }
+ .footer-main-item a .footer-icon {
+   width: 30px;
+ }
+ .vertical-divider {
+   width: 1px;
+   background-color: #96A3B5;
+ }
+ .footer-legal {
+   background-color: white;
+ }
+ .footer-legal ul {
+   max-width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   list-style: none;
+   font-size: 14px;
+   padding: 24px 0;
+ }
+ .footer-legal ul li a {
+   text-decoration: none;
+ }
 @media screen and (max-width: 600px) {
     .contener_img{
         display: none;
