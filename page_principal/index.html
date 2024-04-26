@@ -26,7 +26,7 @@
             <ul>
                 <li class="anchor_link"><a href="#accueil" class="links_actif">Accueil</a></li>
                 <li class="anchor_link"><a href="#shop">Bouquets</a></li>
-                <li class="anchor_link"><a href="#propos">À propos de nous</a></li>
+                <li class="anchor_link"><a href="#propos">À propos</a></li>
                 <li class="anchor_link"><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -155,11 +155,11 @@
     </section>
     
       
-        <section class="sectionTwo">
-           <div class="pinkContainer">
-             <div class="textContainer">
-                <p>le bouquet du moment: disponible jusqu'au <span id="limitDate">15 Mai</span></p>
-                <div class="boldText">Des tulipes pour la <span>Fête des Mères</span></div>
+        <section class="section-two">
+           <div class="pink-container">
+             <div class="text-container">
+                <p>le bouquet du moment: disponible jusqu'au <span id="limit-date">15 Mai</span></p>
+                <div class="bold-text">Des tulipes pour la <span>Fête des Mères</span></div>
                 <button>Acheter maintenat</button>
              </div>
              <div><img src="./assets/images/tulip2.png" alt="fleur_de_tulip"></div>
@@ -262,17 +262,5 @@
     
 
     <script src="./index.js"></script>
-    <script>
-      let modalAlreadyShowed = false
-      window.addEventListener('scroll', function(e) {
-        if( ! modalAlreadyShowed ) {
-          setTimeout( () => {
-            document.getElementById('modal').style.display = 'block'
-          }, 2000 )
-          modalAlreadyShowed = true
-        }
-      });
-
-    </script>
 </body>
 </html>

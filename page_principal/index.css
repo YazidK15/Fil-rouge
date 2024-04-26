@@ -103,7 +103,7 @@ header {
 #jumbotron_text p {
     font-size: 14px;
     display: inline-block;
-    width: 500px;
+    width: 90%;
 }
 
 #jumbotron_button button {
@@ -170,7 +170,7 @@ header {
 #shop_description p {
     margin-bottom: 20px;
     display: inline-block;
-    width: 700px;
+    width: 80%;
     font-size: 15px;
 }
 
@@ -359,7 +359,7 @@ header {
 }
 #modal-close .material-symbols-outlined:hover {
     background-color: rgb(220, 255, 238);
-    cursor: pointer;rgb(220, 225, 255)rgb(220, 253, 255);
+    cursor: pointer;
     border-radius: 4px;
 }
 
@@ -403,6 +403,11 @@ header {
     .footer-main-item {
       max-width: 100%;
    }
+
+   header {
+    display: flex;
+    flex-direction: column;
+   }
    .modal-container {
     width: 96%;
    }
@@ -412,6 +417,14 @@ header {
    .footer-legal ul {
       flex-direction: column;
     }
+
+    #jumbotron_button button {
+        width: 60%
+    }
+
+    #jumbotron_text p {
+        width: 100%;
+    }
     .modal-description {
         padding: 16px;
     }
@@ -420,14 +433,14 @@ header {
 
 /* sectionTwo */
 
-.sectionTwo {
+.section-two {
     display: flex;
     justify-content: center;
     margin: 4% 0%;
     box-sizing: border-box;
 }
 
-.pinkContainer {
+.pink-container {
     background-color: #FCE9EC;
     box-sizing: border-box;
     width: 80%;
@@ -441,11 +454,11 @@ header {
     
 }
 
-.pinkContainer p{
+.pink-container p{
     font-weight: bold;
 }
 
-.textContainer {
+.text-container {
     
     margin-right: 100px;
     max-width: 80%;
@@ -453,21 +466,21 @@ header {
     font-size: 100%;
 }
 
-.boldText{
+.bold-text{
     font-weight: bolder;
     font-size: xx-large;
     box-sizing: border-box;
 }
 
-.boldText span{
+.bold-text span{
     color: #E55473;
 }
 
-#limitDate{
+#limit-date{
     font-weight: bolder;
 }
 
-.textContainer button {
+.text-container button {
     background-color: #56B280;
     border: none;
     color: white;
@@ -477,7 +490,7 @@ header {
     margin: 2%;
 }
 
-.textContainer button:hover{
+.text-container button:hover{
     background-color:#458b65;
     cursor: pointer;
 }
