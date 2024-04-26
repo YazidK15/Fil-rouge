@@ -327,6 +327,11 @@ input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
     .footer-main-item {
       max-width: 100%;
    }
+
+   header {
+    display: flex;
+    flex-direction: column;
+   }
 }
 /* Portables et petits écrans */
 @media screen and (max-width: 576px){
@@ -337,6 +342,11 @@ input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
         flex-direction: column;
         align-items: flex-start;
     }
+
+    header {
+        display: flex;
+        flex-direction: column;
+       }
 }
 
 /* Mobile first pour flexbox */
@@ -348,4 +358,5 @@ input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
         max-width: 80%;
         margin: auto;
     }
+
 }
