@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #2A3342;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    width: 80%;
+}
+
+.links_header {
+    margin-right: 40px;
+}
+
+.logo_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_header img {
+    width: 50px;
+}
+
+.logo_header h1 {
+    font-weight: normal;
+}
+
+.links_header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.links_header li, .icons_header li {
+    margin: 15px;   
+}
+
+.icons_header ul {
+    display: flex;
+}
+
+.links_header a:hover, .icons_header span:hover, .links_actif {
+    font-weight: bold;
+    color:#56B280;
+}
+
+/* Shopping cart - Summary */
+main {
+    background-color: #F4F6F6;
+    padding: 32px 0 64px;
+}
+main section {
+    max-width: 90%;
+    margin: auto;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+    padding: 32px 0;
+    text-align: center;
+}
+
+/* Shopping cart - Summary */
+.cart-summary {
+    background-color: white;
+    border: #D5DAE1 1px solid;
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 32px;
+    flex-grow: 2;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 32px 0;
+}
+hr {
+    background-color: #D5DAE1;
+    height: 1px;
+    border: none;
+}
+.cart-item-img-container {
+    max-width: 130px;
+    max-height: 130px;
+}
+.cart-item-img-container img {
+    border-radius: 16px;
+}
+.cart-item-details {
+    flex-grow: 1;
+}
+.cart-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-item-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+    padding-right: 16px;
+}
+.cart-item-price {
+    color: #32A9FF;
+    font-weight: 600;
+    font-size: 18px;
+}
+.cart-item-description {
+    color: #4D5F7A;
+    margin-bottom: 24px;
+}
+.cart-item-pricing {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+.cart-item-pricing button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.cart-item-pricing button:hover .material-icons-outlined {
+    color: #c40000;
+}
+.cart-item-pricing .material-icons-outlined {
+    color: #4D5F7A;
+}
+.quantity {
+    border: 1px solid rgb(217, 217, 217);
+    width: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.quantity_value {
+    border: 1px solid rgb(217, 217, 217);
+    width: 40px;
+    text-align: right;
+}
+
+.decrease, .increase {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+/* Shopping cart - checkout */
+.cart-checkout {
+    background-color: white;
+    border: #D5DAE1 1px solid;
+    border-radius: 24px;
+    padding: 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cart-checkout-subtotal, .cart-checkout-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cart-checkout-delivery  {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+input[type="radio"]:checked + label, div:has([type="radio"]:checked ) > span{
+    color: #56B280;
+}
+input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
+    cursor: pointer;
+}
+
+.delivery-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-checkout-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid #D5DAE1;
+    padding: 24px 0;
+}
+.cart-checkout select {
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.cart-checkout button {
+    background-color: #56B280;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    padding: 6px 0;
+}
+.cart-checkout button:hover {
+    background-color: #468b65;
+    cursor: pointer;
+}
+.cart-checkout-payment-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.cart-checkout-payment p {
+    margin: 40px 0 8px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cart-checkout-payment-icon img {
+    height: auto;
+}
+
+ /* Footer */
+ footer {
+    background-color: #DAEFF1;
+ }
+ .footer-main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 0;
+ }
+ .footer-main-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+ }
+ .footer-icon-container  {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+ }
+ footer .footer-title {
+    font-weight: 700;
+ }
+ footer .footer-subtitle {
+    font-size: 14px;
+ }
+ .footer-icon {
+    width: 40px;
+ }
+ footer img {
+    height: auto;
+ }
+ .footer-main-item a {
+   padding-right: 8px;
+ }
+ .footer-main-item a .footer-icon {
+   width: 30px;
+ }
+ .vertical-divider {
+   width: 1px;
+   background-color: #96A3B5;
+ }
+ .footer-legal {
+   background-color: white;
+ }
+ .footer-legal ul {
+   max-width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 24px;
+   list-style: none;
+   font-size: 14px;
+   padding: 24px 0;
+ }
+ .footer-legal ul li a {
+   text-decoration: none;
+ }
+
+ /* RESPONSIVE BREAKPOINTS */ 
+/* Tablettes et moyennes écrans */
+@media screen and (max-width: 992px){
+   .footer-main, .footer-legal ul {
+      max-width: 94%;   }
+   .vertical-divider {
+      display: none;
+    }
+    .footer-main-item {
+      max-width: 100%;
+   }
+}
+/* Portables et petits écrans */
+@media screen and (max-width: 576px){
+   .footer-legal ul {
+      flex-direction: column;
+    }
+    .cart-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Mobile first pour flexbox */
+@media screen and (min-width: 992px){
+    main section {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        max-width: 80%;
+        margin: auto;
+    }
+}

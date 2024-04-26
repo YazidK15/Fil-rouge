@@ -6,22 +6,261 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./index.css">
     <title>Floral</title>
 </head>
 <body>
     <!-- Header -->
-    <header></header>
-
+    <header>
+        <div class="logo_header">
+            <div>
+                <img 
+                    src="./assets/icons/logo.png" 
+                    alt="logo du site"
+                />
+            </div>
+            <h1><a href="./index.html">FLORAL</a></h1>
+        </div>
+        <div class="links_header">
+            <ul>
+                <li class="anchor_link"><a href="#accueil" class="links_actif">Accueil</a></li>
+                <li class="anchor_link"><a href="#shop">Bouquets</a></li>
+                <li class="anchor_link"><a href="#propos">À propos</a></li>
+                <li class="anchor_link"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="icons_header">
+            <ul>
+                <li class="anchor_icons">
+                    <a href="#account">
+                        <span class="material-symbols-outlined">account_circle</span>
+                    </a>
+                </li>
+                <li class="anchor_icons">
+                    <a href="./cart/cart.html">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="jumbotron">
+        <div id="jumbotron_box">
+            <div id="jumbotron_text">
+                <h2>Fleurissez vos instants</h2>
+                <p>Embelissez chaque moment avec notre sélection florale exquise où la beauté naturelle rencontre la commodité en ligne</p>
+            </div>
+            <div id="jumbotron_button">
+                <button>Découvrez nos collections</button>
+            </div>
+        </div>
+    </section>
     <!-- Main -->
     <main>
-        <section></section>
-        <section></section>
+    <section id="shop">
+      <div id="selection">
+          <div id="shop_description">
+              <h2>Notre sélection du moment</h2>
+              <p>Laissez-vous séduire par notre sélection florale, où chaque bouquet raconte une histoire et célèbre la beauté éphémère de la nature.</p>
+          </div>
+          <ul>
+            <li>
+              <div class="menu">
+                <div class="image_container">
+                  <img
+                    src="./assets/images/Article1.png"
+                    alt="bouquet de tulipes"
+                  />
+                </div>
+                <div class="menu_description">
+                  <p>Bouquet de tulipes</p>
+                  <div class="price_quantity">
+                    <span class="price">29.99€  </span>  
+                    <div class="quantity">
+                      <button class="decrease" onclick="decrease(0)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(0)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu">
+                <div class="image_container">
+                  <img
+                    src="./assets/images/Article2.png"
+                    alt="Image de fleurs blanches"
+                  />
+                </div>
+                <div class="menu_description">
+                  <p>Bouquet de fleurs blanches</p>
+                  <div class="price_quantity">
+                    <span class="price">45.99€  </span>  
+                    <div class="quantity">
+                      <button class="decrease" onclick="decrease(1)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(1)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu">
+                <div class="image_container">
+                  <img
+                    src="./assets/images/article3.jpg"
+                    alt="Image de tuilipes rose"
+                  />
+                </div>
+                <div class="menu_description">
+                  <p>Bouquet Fête des Mères</p>
+                  <div class="price_quantity">
+                    <span class="price">32.99€  </span>  
+                    <div class="quantity">
+                      <button class="decrease" onclick="decrease(2)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(2)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu">
+                <div class="image_container">
+                  <img
+                    src="./assets/images/Article4.png"
+                    alt="Bouquet de pivoines"
+                  />
+                </div>
+                <div class="menu_description">
+                  <p>Bouquet de pivoines</p>
+                  <div class="price_quantity">
+                    <span class="price">24.99€</span>  
+                    <div class="quantity">
+                      <button class="decrease" onclick="decrease(3)">-</button>
+                      <input type="number" min="0" class="quantity_value" value="0" readonly/>
+                      <button class="increase" onclick="increment(3)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button id="button_discovery">Découvrir tous les bouquets</button>
+      </div>
+    </section>
+    
+      
+        <section class="section-two">
+           <div class="pink-container">
+             <div class="text-container">
+                <p>le bouquet du moment: disponible jusqu'au <span id="limit-date">15 Mai</span></p>
+                <div class="bold-text">Des tulipes pour la <span>Fête des Mères</span></div>
+                <button>Acheter maintenat</button>
+             </div>
+             <div><img src="./assets/images/tulip2.png" alt="fleur_de_tulip"></div>
+           </div>
+
+        </section>
         <section></section>
         <section></section>
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-main-item">
+                <p class="footer-title">Paiement sécurisé</p>
+                <span class="footer-subtitle">C’est quand même mieux.</span>
+                <div class="footer-icon-container">
+                    <div class="footer-icon">
+                        <img src="./assets/icons/footer/carte-bancaire.png" alt="Icône paiement par carte bancaire">
+                    </div>
+                    <div class="footer-icon">
+                        <img src="./assets/icons/footer/visa.png" alt="Icône paiement par Visa">
+                    </div>
+                    <div class="footer-icon">
+                        <img src="./assets/icons/footer/mastercard.png" alt="Icône paiement par Mastercard">
+                    </div>
+                    <div class="footer-icon">
+                        <img src="./assets/icons/footer/klarna.png" alt="Icône paiement par Klarna">
+                    </div>
+                </div>
+            </div>
+            <span class="vertical-divider"></span>
+            <div class="footer-main-item">
+                <p class="footer-title">Modes de livraisons</p>
+                <span class="footer-subtitle">En livraison ou en magasin, vous choisissez.</span>
+                <div class="footer-icon-container">
+                    <div class="footer-icon">
+                        <img src="./assets/icons/footer/click-n-collect.png" alt="Icône livraison Click & Collect">
+                    </div>
+                    <div class="footer-icon">
+                        <img src="./assets/icons/footer/chronopost.png" alt="Icône livraison Chronopost">
+                    </div>
+                </div>
+            </div>
+            <span class="vertical-divider"></span>
+            <div class="footer-main-item">
+                <p class="footer-title">Rejoignez-nous</p>
+                <div class="footer-icon-container">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <div class="footer-icon">
+                            <img src="./assets/icons/footer/instagram.png" alt="Icône lien instagram">
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="footer-icon">
+                            <img src="./assets/icons/footer/facebook.png" alt="Icône lien Facebook">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <div class="footer-icon">
+                            <img src="./assets/icons/footer/twitter.png" alt="Icône lien Twitter">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <div class="footer-icon">
+                            <img src="./assets/icons/footer/linkedin.png" alt="Icône lien Linkedin">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <ul>
+                <li><a href="">Informations légales</a></li>
+                <li><a href="">Données personnelles</a></li>
+                <li><a href="">Politique de remboursement</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-container">
+        <div class="modal-img-container">
+          <img src="./assets/images/modal.png" alt="Photo d'un bouquet de fleurs">
+        </div>
+        <div class="modal-description">
+          <div id="modal-close"  onclick="
+            document.getElementById('modal').style.display = 'none'
+          "><span class="material-symbols-outlined">close</span></div>
+          <div class="modal-description-content">
+            <p class="modal-title">Livraison offerte dès  80€ d’achat</p>
+            <p class="modal-subtitle">Offre valable jusqu’au 30 mai</p>
+            <button class="modal-btn">J'en profite<span class="material-symbols-outlined">arrow_forward</span></button>
+          </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+
+    <script src="./index.js"></script>
 </body>
 </html>
