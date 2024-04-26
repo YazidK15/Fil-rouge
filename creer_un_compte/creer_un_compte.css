@@ -60,7 +60,8 @@ form{
     margin-top: 10px;
     background-color: #56B280;
     color: white;
-    padding: 10px 100px;
+    padding: 10px;
+    width: 100%;
     border-style: none;
     border-radius: 10px;
 }
