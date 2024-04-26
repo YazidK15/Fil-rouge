@@ -300,6 +300,7 @@ header {
     font-size: 12px;
 }
 
+
  /* RESPONSIVE BREAKPOINTS */ 
 /* Tablettes et moyennes écrans */
 @media screen and (max-width: 992px){
@@ -331,6 +332,9 @@ header {
     display: flex;
     flex-direction: column;
    }
+   .modal-container {
+    width: 96%;
+   }
 }
 /* Portables et petits écrans */
 @media screen and (max-width: 576px){
@@ -344,6 +348,9 @@ header {
 
     #jumbotron_text p {
         width: 100%;
+    }
+    .modal-description {
+        padding: 16px;
     }
 }
 
