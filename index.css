@@ -420,14 +420,14 @@ header {
 
 /* sectionTwo */
 
-.sectionTwo {
+.section-two {
     display: flex;
     justify-content: center;
     margin: 4% 0%;
     box-sizing: border-box;
 }
 
-.pinkContainer {
+.pink-container {
     background-color: #FCE9EC;
     box-sizing: border-box;
     width: 80%;
@@ -441,11 +441,11 @@ header {
     
 }
 
-.pinkContainer p{
+.pink-container p{
     font-weight: bold;
 }
 
-.textContainer {
+.text-container {
     
     margin-right: 100px;
     max-width: 80%;
@@ -453,21 +453,21 @@ header {
     font-size: 100%;
 }
 
-.boldText{
+.bold-text{
     font-weight: bolder;
     font-size: xx-large;
     box-sizing: border-box;
 }
 
-.boldText span{
+.bold-text span{
     color: #E55473;
 }
 
-#limitDate{
+#limit-date{
     font-weight: bolder;
 }
 
-.textContainer button {
+.text-container button {
     background-color: #56B280;
     border: none;
     color: white;
@@ -477,7 +477,7 @@ header {
     margin: 2%;
 }
 
-.textContainer button:hover{
+.text-container button:hover{
     background-color:#458b65;
     cursor: pointer;
 }
