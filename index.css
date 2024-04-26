@@ -428,6 +428,28 @@ header {
     .modal-description {
         padding: 16px;
     }
+    .vendeuse_img_container{
+        display: none;
+    }
+    .about_us{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+        
+    }
+    .about_us_description {
+        margin: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+
+   
+
+    .accessibility{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -498,7 +520,7 @@ header {
 /* section_three */
 
 .section-three {
-    background-color: yellow;
+    
     width: 100%;
     box-sizing: border-box;
     display: flex;
