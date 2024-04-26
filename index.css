@@ -103,7 +103,7 @@ header {
 #jumbotron_text p {
     font-size: 14px;
     display: inline-block;
-    width: 500px;
+    width: 90%;
 }
 
 #jumbotron_button button {
@@ -170,7 +170,7 @@ header {
 #shop_description p {
     margin-bottom: 20px;
     display: inline-block;
-    width: 700px;
+    width: 80%;
     font-size: 15px;
 }
 
@@ -287,6 +287,82 @@ header {
    text-decoration: none;
  }
 
+ /* Popup */
+ #modal {
+    display: none;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 77, 95, 122, .7 );
+}
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 24px;
+    width: 64%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+.modal-img-container {
+    max-width: 46%;
+}
+.modal-img-container img {
+    border-radius: 24px 0 0 24px;
+    object-fit: cover;
+}
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.modal-subtitle {
+    color: #4D5F7A;
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+.modal-btn {
+    background-color: #56B280;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-btn:hover {
+    background-color: #468b65;
+    cursor: pointer;
+}
+.modal-btn .material-symbols-outlined {
+    color: white
+}
+.modal-description {
+    padding: 32px;
+    flex-grow: 1;
+}
+.modal-description-content {
+    margin: 10% 0;
+}
+#modal-close {
+    text-align: right;
+}
+#modal-close .material-symbols-outlined:hover {
+    background-color: rgb(220, 255, 238);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
  /* Javascript sur les input  */
 
 .quantity_value::-webkit-inner-spin-button, .quantity_value::-webkit-outer-spin-button {
@@ -299,6 +375,7 @@ header {
     font-weight: 500;
     font-size: 12px;
 }
+
 
  /* RESPONSIVE BREAKPOINTS */ 
 /* Tablettes et moyennes écrans */
@@ -326,25 +403,44 @@ header {
     .footer-main-item {
       max-width: 100%;
    }
+
+   header {
+    display: flex;
+    flex-direction: column;
+   }
+   .modal-container {
+    width: 96%;
+   }
 }
 /* Portables et petits écrans */
 @media screen and (max-width: 576px){
    .footer-legal ul {
       flex-direction: column;
     }
+
+    #jumbotron_button button {
+        width: 60%
+    }
+
+    #jumbotron_text p {
+        width: 100%;
+    }
+    .modal-description {
+        padding: 16px;
+    }
 }
 
 
 /* sectionTwo */
 
-.sectionTwo {
+.section-two {
     display: flex;
     justify-content: center;
     margin: 4% 0%;
     box-sizing: border-box;
 }
 
-.pinkContainer {
+.pink-container {
     background-color: #FCE9EC;
     box-sizing: border-box;
     width: 80%;
@@ -358,11 +454,11 @@ header {
     
 }
 
-.pinkContainer p{
+.pink-container p{
     font-weight: bold;
 }
 
-.textContainer {
+.text-container {
     
     margin-right: 100px;
     max-width: 80%;
@@ -370,21 +466,21 @@ header {
     font-size: 100%;
 }
 
-.boldText{
+.bold-text{
     font-weight: bolder;
     font-size: xx-large;
     box-sizing: border-box;
 }
 
-.boldText span{
+.bold-text span{
     color: #E55473;
 }
 
-#limitDate{
+#limit-date{
     font-weight: bolder;
 }
 
-.textContainer button {
+.text-container button {
     background-color: #56B280;
     border: none;
     color: white;
@@ -394,7 +490,7 @@ header {
     margin: 2%;
 }
 
-.textContainer button:hover{
+.text-container button:hover{
     background-color:#458b65;
     cursor: pointer;
 }

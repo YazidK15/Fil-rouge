@@ -26,7 +26,7 @@
             <ul>
                 <li class="anchor_link"><a href="#accueil" class="links_actif">Accueil</a></li>
                 <li class="anchor_link"><a href="#shop">Bouquets</a></li>
-                <li class="anchor_link"><a href="#propos">À propos de nous</a></li>
+                <li class="anchor_link"><a href="#propos">À propos</a></li>
                 <li class="anchor_link"><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -155,11 +155,11 @@
     </section>
     
       
-        <section class="sectionTwo">
-           <div class="pinkContainer">
-             <div class="textContainer">
-                <p>le bouquet du moment: disponible jusqu'au <span id="limitDate">15 Mai</span></p>
-                <div class="boldText">Des tulipes pour la <span>Fête des Mères</span></div>
+        <section class="section-two">
+           <div class="pink-container">
+             <div class="text-container">
+                <p>le bouquet du moment: disponible jusqu'au <span id="limit-date">15 Mai</span></p>
+                <div class="bold-text">Des tulipes pour la <span>Fête des Mères</span></div>
                 <button>Acheter maintenat</button>
              </div>
              <div><img src="./assets/images/tulip2.png" alt="fleur_de_tulip"></div>
@@ -263,6 +263,28 @@
             </ul>
         </div>
     </footer>
+
+    <div id="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-container">
+        <div class="modal-img-container">
+          <img src="./assets/images/modal.png" alt="Photo d'un bouquet de fleurs">
+        </div>
+        <div class="modal-description">
+          <div id="modal-close"  onclick="
+            document.getElementById('modal').style.display = 'none'
+          "><span class="material-symbols-outlined">close</span></div>
+          <div class="modal-description-content">
+            <p class="modal-title">Livraison offerte dès  80€ d’achat</p>
+            <p class="modal-subtitle">Offre valable jusqu’au 30 mai</p>
+            <button class="modal-btn">J'en profite<span class="material-symbols-outlined">arrow_forward</span></button>
+          </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+
     <script src="./index.js"></script>
 </body>
 </html>
