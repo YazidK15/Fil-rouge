@@ -327,6 +327,11 @@ input[type="radio"]:hover + label, div:has([type="radio"]:hover ) > span{
     .footer-main-item {
       max-width: 100%;
    }
+
+   header {
+    display: flex;
+    flex-direction: column;
+   }
 }
 /* Portables et petits écrans */
 @media screen and (max-width: 576px){
