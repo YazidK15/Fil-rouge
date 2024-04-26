@@ -359,7 +359,7 @@ header {
 }
 #modal-close .material-symbols-outlined:hover {
     background-color: rgb(220, 255, 238);
-    cursor: pointer;rgb(220, 225, 255)rgb(220, 253, 255);
+    cursor: pointer;
     border-radius: 4px;
 }
 
