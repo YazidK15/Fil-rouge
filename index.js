@@ -9,3 +9,15 @@ function decrease (index) {
         test[index].value = parseInt(test[index].value) - 1
     }
 }
+
+
+let modalAlreadyShowed = false
+window.addEventListener('scroll', function(e) {
+  if( ! modalAlreadyShowed ) {
+    setTimeout( () => {
+      document.getElementById('modal').style.display = 'block'
+    }, 2000 )
+    modalAlreadyShowed = true
+  }
+})
+
